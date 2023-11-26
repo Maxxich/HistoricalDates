@@ -1,6 +1,6 @@
 ## Запуск проекта
 
-Демонстрационная версия на Vercel
+Демонстрационная версия на Vercel[https://historical-dates-beta.vercel.app/]
 
 ## Запуск проекта
 
@@ -14,7 +14,7 @@ npm run build:prod - сборка проекта в prod режиме
 
 ## Скрипты
 
-- `start:serve` - Запуск frontend проекта на webpack dev server
+- `npm run start:serve` - Запуск frontend проекта на webpack dev server
 
 - `npm run build:prod` - Сборка в prod режиме
 - `npm run build:dev` - Сборка в dev режиме (не минимизирован)
