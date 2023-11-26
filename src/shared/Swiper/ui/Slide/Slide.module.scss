@@ -1,0 +1,51 @@
+.year {
+  font-size: 16px;
+  font-family: 'Bebas Neue', sans-serif;
+  line-height: 19.2px;
+  font-weight: 400;
+  color: #3877EE;
+  display: block;
+  margin-bottom: 11px;
+  
+
+  @media (width >= 500px) {
+    line-height: 23px;
+    font-size: 19px;
+    margin-bottom: 0;
+  }
+
+  @media (width >= 750px) {
+    line-height: 26px;
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  @media (width >= 1140px) {
+    line-height: 30px;
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+}
+
+.p {
+  font-size: 14px;
+  line-height: 20.3px;
+  font-weight: 400;
+  color: #42567A;
+
+  @media (width >= 500px) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (width >= 750px) {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  @media (width >= 1140px) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+

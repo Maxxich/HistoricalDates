@@ -1,0 +1,29 @@
+@import './reset';
+@import 'https://fonts.googleapis.com/css2?family=Bebas+Neue&family=PT+Sans:wght@400;700&display=swap';
+
+body {
+  background-color: #F4F5F9;
+  font-family: 'PT Sans', sans-serif;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 20px;
+
+  @media (width >= 1480px) {
+    width: 1480px;
+  }
+}

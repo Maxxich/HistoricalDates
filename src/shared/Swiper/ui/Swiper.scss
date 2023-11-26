@@ -1,0 +1,15 @@
+.swiper-pagination-bullet{
+  height: 6px;
+  width: 6px;
+  background-color: #42567A;
+  opacity: 0.4;
+  transition: opacity 0.3s ease 0s;
+
+  @media (width >= 500px) {
+    display: none;
+  }
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+}

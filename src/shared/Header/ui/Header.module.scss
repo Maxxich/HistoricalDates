@@ -1,0 +1,36 @@
+.h1 {
+  display: block;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #42567A;
+  text-wrap: wrap;
+
+  @media(width >= 500px) {
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: 700;
+    border-width: 5px;
+    border-style: solid;
+    border-image: 
+      linear-gradient(
+        to bottom, 
+        #3877EE, 
+        #EF5DA8
+      ) 1 100%;
+    border-right: none;
+    padding-left: 40px;
+  }
+
+  @media(width >= 750px) {
+    font-size: 44px;
+    line-height: 52px;
+    padding-left: 60px;
+  }
+
+  @media(width >= 1140px) {
+    font-size: 56px;
+    line-height: 67.2px;
+    padding-left: 78px;
+  }
+}

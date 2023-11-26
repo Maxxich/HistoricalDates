@@ -1,0 +1,26 @@
+.years {
+  font-size: 56px;
+  font-weight: 700;
+  text-wrap: nowrap;
+  width: fit-content;
+  
+  @media(width >= 500px) {
+    font-size: 80px;
+  }
+
+  @media(width >= 750px) {
+    font-size: 135px;
+  }
+
+  @media(width >= 1140px) {
+    font-size: 200px;
+  }
+}
+
+.blue {
+  color: #5D5FEF;
+}
+
+.pink {
+  color: #EF5DA8;
+}

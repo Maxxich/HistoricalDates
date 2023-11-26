@@ -1,0 +1,109 @@
+.Button {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  border: 1px solid rgb(66 86 122 / 50%);
+  background-color: transparent;
+  position: relative;
+  transition: background-color 0.3s ease 0s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #fff;
+  }
+
+  &::before {
+    position: absolute;
+    display: block;
+    content: "";
+    height: 4.5px;
+    width: 4.5px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-30%, -50%) rotate(45deg);
+    border-left: 2px solid #42567A;
+    border-bottom: 2px solid #42567A;
+  }
+
+  &.rotated {
+    transform: rotate(180deg);
+  }
+
+  @media (width >= 500px) {
+    height: 30px;
+    width: 30px;
+
+    &::before {
+      height: 5px;
+      width: 5px;
+    }
+  }
+
+  @media (width >= 750px) {
+    height: 40px;
+    width: 40px;
+
+    &::before {
+      height: 7px;
+      width: 7px;
+    }
+  }
+
+  @media (width >= 1140px) {
+    height: 50px;
+    width: 50px;
+
+    &::before {
+      height: 9px;
+      width: 9px;
+    }
+  }
+
+}
+
+.buttons {
+  display: flex;
+  gap: 8px;
+
+  @media (width >= 500px) {
+    gap: 12px;
+  }
+
+  @media (width >= 750px) {
+    gap: 16px;
+  }
+
+  @media (width >= 1140px) {
+    gap: 20px;
+  }
+}
+
+.TabNavigation {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  width: fit-content;
+  z-index: 1;
+  position: relative;
+
+  @media (width >= 500px) {
+    gap: 13px;
+    z-index: 0;
+  }
+
+  @media (width >= 750px) {
+    gap: 17px;
+  }
+
+  @media (width >= 1140px) {
+    gap: 20px;
+  }
+}
+
+.tabsCounter {
+  font-size: 14px;
+  line-height: 18.12px;
+  font-weight: 400;
+  color: #42567A;
+}

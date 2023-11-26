@@ -1,0 +1,64 @@
+.Button {
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: none;
+  filter: drop-shadow(0 0 15px rgb(56 119 238 / 20%));
+  color: #3877EE;
+  transform-origin: center;
+  cursor: pointer;
+
+  @media (width >= 500px) {
+    width: 30px;
+    height: 30px;
+  }
+  
+  @media (width >= 750px) {
+    width: 35px;
+    height: 35px;
+  }
+  
+  @media (width >= 1140px) {
+    width: 40px;
+    height: 40px;
+  }
+
+  &::before {
+    position: absolute;
+    display: block;
+    content: "";
+    height: 5px;
+    width: 5px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-30%, -50%) rotate(45deg);
+    border-left: 2px solid #3877EE;
+    border-bottom: 2px solid #3877EE;
+
+    @media (width >= 500px) {
+      width: 5px;
+      height: 5px;
+    }
+    
+    @media (width >= 750px) {
+      width: 6px;
+      height: 6px;
+    }
+    
+    @media (width >= 1140px) {
+      height: 7px;
+      width: 7px;
+    }
+  }
+
+  &.rotated {
+    &::before {
+      transform: translate(-70%, -50%) rotate(-135deg);
+    }
+  }
+}
+
+.hidden {
+  display: none;
+}
