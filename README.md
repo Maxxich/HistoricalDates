@@ -1,6 +1,8 @@
 ## Запуск проекта
 
 Демонстрационная версия на Vercel[https://historical-dates-beta.vercel.app/]
+Для анимации используется библиотека React-Spring[https://www.react-spring.io/]
+----
 
 ## Запуск проекта
 
